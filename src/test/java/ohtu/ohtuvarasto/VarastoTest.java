@@ -132,7 +132,7 @@ public class VarastoTest {
         varasto.otaVarastosta(2);
 
         // varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
-        assertEquals(oletusKoko - sopivaLisays, varasto.paljonkoMahtuu(), vertailuTarkkuus);
+        assertEquals((oletusKoko - sopivaLisays + 2), varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
     
     @Test
